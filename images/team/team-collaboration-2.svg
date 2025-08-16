@@ -1,0 +1,202 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="desk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B4513" />
+      <stop offset="100%" style="stop-color:#A0522D" />
+    </linearGradient>
+    <linearGradient id="laptop1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C0C0C0" />
+      <stop offset="100%" style="stop-color:#808080" />
+    </linearGradient>
+    <linearGradient id="screen1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e" />
+      <stop offset="100%" style="stop-color:#16213e" />
+    </linearGradient>
+    <radialGradient id="person1" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#F5DEB3" />
+      <stop offset="100%" style="stop-color:#DEB887" />
+    </radialGradient>
+    <radialGradient id="person2" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#FDBCB4" />
+      <stop offset="100%" style="stop-color:#F4A460" />
+    </radialGradient>
+    <radialGradient id="person3" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#E6C2A6" />
+      <stop offset="100%" style="stop-color:#D2B48C" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+  
+  <!-- Office environment -->
+  <rect x="0" y="450" width="800" height="150" fill="#f8f9fa"/>
+  
+  <!-- Conference table -->
+  <ellipse cx="400" cy="420" rx="300" ry="80" fill="url(#desk)"/>
+  
+  <!-- Laptops and devices -->
+  <!-- Laptop 1 -->
+  <rect x="250" y="360" width="80" height="50" rx="4" fill="url(#laptop1)"/>
+  <rect x="255" y="365" width="70" height="40" fill="url(#screen1)"/>
+  <rect x="260" y="370" width="60" height="30" fill="#667eea" opacity="0.8"/>
+  
+  <!-- Laptop 2 -->
+  <rect x="470" y="350" width="80" height="50" rx="4" fill="url(#laptop1)"/>
+  <rect x="475" y="355" width="70" height="40" fill="url(#screen1)"/>
+  <rect x="480" y="360" width="60" height="30" fill="#764ba2" opacity="0.8"/>
+  
+  <!-- Tablet -->
+  <rect x="380" y="380" width="40" height="60" rx="8" fill="#2c3e50"/>
+  <rect x="385" y="385" width="30" height="50" fill="#ecf0f1"/>
+  
+  <!-- Papers and documents -->
+  <rect x="320" y="390" width="60" height="40" fill="white" opacity="0.9"/>
+  <rect x="325" y="395" width="50" height="2" fill="#333" opacity="0.3"/>
+  <rect x="325" y="400" width="40" height="2" fill="#333" opacity="0.3"/>
+  <rect x="325" y="405" width="45" height="2" fill="#333" opacity="0.3"/>
+  
+  <!-- Coffee cups -->
+  <circle cx="200" cy="400" r="12" fill="#8B4513"/>
+  <circle cx="200" cy="400" r="10" fill="#D2691E"/>
+  <circle cx="600" cy="390" r="12" fill="#8B4513"/>
+  <circle cx="600" cy="390" r="10" fill="#D2691E"/>
+  
+  <!-- Person 1 (Left) -->
+  <g transform="translate(150, 200)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="35" fill="url(#person1)"/>
+    <!-- Hair -->
+    <path d="M-25,-20 Q0,-45 25,-20 Q30,-25 25,-10 Q0,-35 -25,-10 Z" fill="#4A4A4A"/>
+    <!-- Eyes -->
+    <circle cx="-10" cy="-5" r="3" fill="#333"/>
+    <circle cx="10" cy="-5" r="3" fill="#333"/>
+    <circle cx="-10" cy="-5" r="1" fill="white"/>
+    <circle cx="10" cy="-5" r="1" fill="white"/>
+    <!-- Nose -->
+    <ellipse cx="0" cy="2" rx="2" ry="3" fill="#DEB887"/>
+    <!-- Mouth -->
+    <path d="M-8,8 Q0,15 8,8" stroke="#333" stroke-width="2" fill="none"/>
+    <!-- Body -->
+    <rect x="-25" y="35" width="50" height="80" rx="10" fill="#667eea"/>
+    <!-- Arms -->
+    <rect x="-45" y="40" width="20" height="60" rx="10" fill="#667eea"/>
+    <rect x="25" y="40" width="20" height="60" rx="10" fill="#667eea"/>
+    <!-- Hands -->
+    <circle cx="-35" cy="110" r="8" fill="url(#person1)"/>
+    <circle cx="35" cy="110" r="8" fill="url(#person1)"/>
+  </g>
+  
+  <!-- Person 2 (Center) -->
+  <g transform="translate(400, 180)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="35" fill="url(#person2)"/>
+    <!-- Hair -->
+    <path d="M-30,-15 Q0,-40 30,-15 Q35,-20 30,-5 Q0,-30 -30,-5 Z" fill="#8B4513"/>
+    <!-- Eyes -->
+    <circle cx="-10" cy="-5" r="3" fill="#333"/>
+    <circle cx="10" cy="-5" r="3" fill="#333"/>
+    <circle cx="-10" cy="-5" r="1" fill="white"/>
+    <circle cx="10" cy="-5" r="1" fill="white"/>
+    <!-- Nose -->
+    <ellipse cx="0" cy="2" rx="2" ry="3" fill="#F4A460"/>
+    <!-- Mouth -->
+    <path d="M-8,8 Q0,15 8,8" stroke="#333" stroke-width="2" fill="none"/>
+    <!-- Body -->
+    <rect x="-25" y="35" width="50" height="80" rx="10" fill="#764ba2"/>
+    <!-- Arms -->
+    <rect x="-45" y="40" width="20" height="60" rx="10" fill="#764ba2"/>
+    <rect x="25" y="40" width="20" height="60" rx="10" fill="#764ba2"/>
+    <!-- Hands pointing to laptop -->
+    <circle cx="-35" cy="110" r="8" fill="url(#person2)"/>
+    <circle cx="35" cy="110" r="8" fill="url(#person2)"/>
+  </g>
+  
+  <!-- Person 3 (Right) -->
+  <g transform="translate(650, 220)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="35" fill="url(#person3)"/>
+    <!-- Hair -->
+    <path d="M-25,-25 Q0,-40 25,-25 Q30,-30 25,-15 Q0,-35 -25,-15 Z" fill="#2F4F4F"/>
+    <!-- Eyes -->
+    <circle cx="-10" cy="-5" r="3" fill="#333"/>
+    <circle cx="10" cy="-5" r="3" fill="#333"/>
+    <circle cx="-10" cy="-5" r="1" fill="white"/>
+    <circle cx="10" cy="-5" r="1" fill="white"/>
+    <!-- Glasses -->
+    <circle cx="-10" cy="-5" r="12" fill="none" stroke="#333" stroke-width="2"/>
+    <circle cx="10" cy="-5" r="12" fill="none" stroke="#333" stroke-width="2"/>
+    <line x1="2" y1="-5" x2="-2" y2="-5" stroke="#333" stroke-width="2"/>
+    <!-- Nose -->
+    <ellipse cx="0" cy="2" rx="2" ry="3" fill="#D2B48C"/>
+    <!-- Mouth -->
+    <path d="M-8,8 Q0,15 8,8" stroke="#333" stroke-width="2" fill="none"/>
+    <!-- Body -->
+    <rect x="-25" y="35" width="50" height="80" rx="10" fill="#2c3e50"/>
+    <!-- Arms -->
+    <rect x="-45" y="40" width="20" height="60" rx="10" fill="#2c3e50"/>
+    <rect x="25" y="40" width="20" height="60" rx="10" fill="#2c3e50"/>
+    <!-- Hands -->
+    <circle cx="-35" cy="110" r="8" fill="url(#person3)"/>
+    <circle cx="35" cy="110" r="8" fill="url(#person3)"/>
+  </g>
+  
+  <!-- Collaboration elements -->
+  <!-- Connection lines -->
+  <path d="M185,310 Q300,280 415,290" stroke="#667eea" stroke-width="3" fill="none" opacity="0.6" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;10;0" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M415,290 Q550,270 615,310" stroke="#764ba2" stroke-width="3" fill="none" opacity="0.6" stroke-dasharray="5,5">
+    <animate attributeName="stroke-dashoffset" values="0;10;0" dur="3s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Floating icons representing collaboration -->
+  <g opacity="0.7">
+    <!-- Lightbulb (ideas) -->
+    <g transform="translate(300, 150)">
+      <circle cx="0" cy="0" r="15" fill="#FFF700" opacity="0.8"/>
+      <path d="M-8,-5 L8,-5 M-6,5 L6,5 M-4,10 L4,10" stroke="#333" stroke-width="2"/>
+      <animateTransform attributeName="transform" type="translate" values="300,150; 300,140; 300,150" dur="2s" repeatCount="indefinite"/>
+    </g>
+    
+    <!-- Gear (development) -->
+    <g transform="translate(500, 160)">
+      <circle cx="0" cy="0" r="12" fill="#667eea"/>
+      <circle cx="0" cy="0" r="6" fill="white"/>
+      <rect x="-2" y="-15" width="4" height="6" fill="#667eea"/>
+      <rect x="-2" y="9" width="4" height="6" fill="#667eea"/>
+      <rect x="-15" y="-2" width="6" height="4" fill="#667eea"/>
+      <rect x="9" y="-2" width="6" height="4" fill="#667eea"/>
+      <animateTransform attributeName="transform" type="rotate" values="0 500 160; 360 500 160" dur="4s" repeatCount="indefinite"/>
+    </g>
+    
+    <!-- Chart (analytics) -->
+    <g transform="translate(350, 120)">
+      <rect x="-10" y="-8" width="20" height="16" fill="white" stroke="#764ba2" stroke-width="2"/>
+      <rect x="-6" y="2" width="3" height="4" fill="#764ba2"/>
+      <rect x="-1" y="-2" width="3" height="8" fill="#764ba2"/>
+      <rect x="4" y="0" width="3" height="6" fill="#764ba2"/>
+      <animateTransform attributeName="transform" type="translate" values="350,120; 350,110; 350,120" dur="2.5s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  
+  <!-- Team collaboration text -->
+  <text x="400" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#2c3e50">
+    LCS PRIME TEAM
+  </text>
+  <text x="400" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#667eea">
+    Collaboration • Innovation • Excellence
+  </text>
+  
+  <!-- Subtle background pattern -->
+  <defs>
+    <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="2" fill="#667eea" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#dots)"/>
+</svg>

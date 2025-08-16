@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LCS PRIME</title>
+    <meta name="description" content="Get in touch with LCS PRIME. Ready to start your next project? Let's discuss how we can help transform your business with innovative digital solutions.">
+    
+    <!-- Favicon Implementation -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23667eea'/><text y='70' font-size='60' text-anchor='middle' x='50' fill='white'>L</text></svg>">
+    
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">LCS PRIME</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                
+                <!-- Mobile Menu Toggle Button (will be created by JS) -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay (will be created by JS) -->
+
+    <!-- Scroll Buttons (will be created by JS) -->
+
+    <!-- Page Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Get In Touch</h1>
+                <p>Ready to start your next project? Let's talk!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Let's Build Something Amazing</h2>
+                    <p>We're here to help you transform your ideas into reality. Whether you need a complete digital solution or want to enhance your existing platform, our team is ready to collaborate with you.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-text">
+                                <strong>Email</strong>
+                                <p><a href="mailto:contact@lcsprime.com" style="color: inherit; text-decoration: none;">contact@lcsprime.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <strong>Phone</strong>
+                                <p><a href="tel:+15551234567" style="color: inherit; text-decoration: none;">+91 80191 02662</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <strong>Address</strong>
+                                <p>Manish Residency, Madinaguda<br>Hyderabad, TS 500049<br>India</p>
+                                <button class="map-toggle-btn" onclick="toggleMap()">📍 View on Map</button>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div class="contact-text">
+                                <strong>Business Hours</strong>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                <p>Response Time: Within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Interactive Map Section -->
+                    <div class="map-section" id="mapSection" style="display: none;">
+                        <div class="map-header">
+                            <h3>📍 Our Location</h3>
+                            <button class="map-close-btn" onclick="toggleMap()">✕</button>
+                        </div>
+                        <div class="map-container">
+                            <div class="map-placeholder" id="mapContainer">
+                                <div class="map-loading">
+                                    <div class="map-spinner"></div>
+                                    <p>Loading map...</p>
+                                </div>
+                                <!-- Embedded Google Map -->
+                                <iframe 
+                                    id="googleMap"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.825437107477!2d78.38576!3d17.4977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb919d4a1a1234%3A0x5678901234567890!2sManish%20Residency%2C%20Madinaguda%2C%20Hyderabad%2C%20Telangana%20500049%2C%20India!5e0!3m2!1sen!2sus!4v1639123456789!5m2!1sen!2sus"
+                                    width="100%" 
+                                    height="300" 
+                                    style="border:0; border-radius: 12px; display: none;" 
+                                    allowfullscreen="" 
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    onload="mapLoaded()">
+                                </iframe>
+                            </div>
+                            <div class="map-info">
+                                <div class="location-details">
+                                    <h4>🏢 LCS PRIME Office</h4>
+                                    <p><strong>Address:</strong> Manish Residency, Madinaguda</p>
+                                    <p><strong>City:</strong> Hyderabad, Telangana 500049</p>
+                                    <p><strong>Country:</strong> India</p>
+                                    <div class="map-actions">
+                                        <a href="https://maps.google.com/maps?daddr=Manish+Residency,+Madinaguda,+Hyderabad,+Telangana+500049,+India" 
+                                           target="_blank" 
+                                           class="map-directions-btn">
+                                            🧭 Get Directions
+                                        </a>
+                                        <button class="map-share-btn" onclick="shareLocation()">
+                                            📤 Share Location
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <form class="contact-form" id="contactForm">
+                    <h3>Send us a Message</h3>
+                    
+                    <!-- Success Message will be inserted here by JavaScript -->
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required autocomplete="given-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required autocomplete="email" placeholder="your.email@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+91 80191 02662">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" autocomplete="organization" placeholder="Your Company Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Interest *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="mobile-apps">Mobile Apps</option>
+                            <option value="ui-ux-design">UI/UX Design</option>
+                            <option value="cloud-solutions">Cloud Solutions</option>
+                            <option value="analytics">Analytics & Insights</option>
+                            <option value="security">Security Solutions</option>
+                            <option value="consultation">Consultation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Project Description *</label>
+                        <textarea id="message" name="message" rows="6" required 
+                                  placeholder="Tell us about your project, goals, and any specific requirements..."></textarea>
+                        <!-- Character counter will be added here by JavaScript -->
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <p class="form-note">* Required fields. We'll respond within 24 hours.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prefer to Talk Directly?</h2>
+                <p>Schedule a free consultation call to discuss your project in detail.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+15551234567" class="cta-button">📞 Call Now</a>
+                    <a href="mailto:contact@lcsprime.com" class="cta-button-secondary">📧 Email Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LCS PRIME</h3>
+                    <p>Transforming ideas into digital reality with innovative solutions for forward-thinking businesses.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#web-development">Web Development</a></li>
+                        <li><a href="services.html#mobile-apps">Mobile Apps</a></li>
+                        <li><a href="services.html#ui-ux-design">UI/UX Design</a></li>
+                        <li><a href="services.html#cloud-solutions">Cloud Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 <a href="mailto:contact@lcsprime.com" style="color: inherit;">contact@lcsprime.com</a></p>
+                    <p>📞 <a href="tel:+15551234567" style="color: inherit;">+91 80191 02662</a></p>
+                    <p>📍 Manish Residency, Madinaguda, Hyderabad, TS, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LCS PRIME. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript File -->
+    <script src="js/contact.js"></script>
+</body>
+</html>
